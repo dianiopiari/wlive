@@ -1,15 +1,15 @@
 {
-	"devCommand": "uvicorn api:app",
+	"devCommand": "uvicorn live:app",
 	"builds": [
 	  	{
-			"src": "api.py",
+			"src": "live.py",
 			"use": "@vercel/python"
 	  	}
 	],
 	"routes": [
 	  	{
 			"src": "/(.*)",
-			"dest": "api.py"
+			"dest": "live.py"
 	  	}
 	]
   }
